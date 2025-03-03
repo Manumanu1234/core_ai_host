@@ -124,18 +124,18 @@ export const Contact = (props) => {
               <div className="social">
                 <ul>
                   <li>
-                    <a href={props.data ? props.data.facebook : "/"}>
+                    <a href="https://www.instagram.com/core.ai_toch/?igsh=MTlwb2d2MnNyNzV1cA%3D%3D#">
                       <i className="fa fa-instagram"></i>
                     </a>
                   </li>
                   <li>
-                    <a href={props.data ? props.data.twitter : "/"}>
+                    <a href="https://www.linkedin.com/company/core-ai-toch/">
                       <i className="fa fa-linkedin"></i>
                     </a>
                   </li>
                   <li>
                     <a href={props.data ? props.data.youtube : "/"}>
-                      <i className="fa fa-youtube"></i>
+                      <i className="fa fa-twitter"></i>
                     </a>
                   </li>
                 </ul>

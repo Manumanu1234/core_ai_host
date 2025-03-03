@@ -125,40 +125,6 @@ const StudentProjects = ({ props = {} }) => {
           )}
         </ul>
       </div>
-      <div className='section-title'>
-      <h3>Add Project</h3>
-      <form onSubmit={handleFormSubmit} className="project-form">
-        <div>
-          <input
-            type="text" name="project"
-            placeholder="Project name"
-            value={newProject.project}
-            onChange={handleInputChange}
-            className="form-input"
-          />
-        </div>
-        <div>
-          <input
-            type="text" name="description"
-            placeholder="Project description"
-            value={newProject.description}
-            onChange={handleInputChange}
-            className="form-input"
-          />
-        </div>
-        <div>
-          <input
-            type="text" name="members" className="form-input"
-            placeholder="Member names (comma separated)"
-            value={newProject.members}
-            onChange={handleInputChange}
-          />
-        </div>
-        <div>
-          <input type="submit" value="Add" className="submit-btn" />
-        </div>
-      </form>
-      </div>
     </div>
   );
 };

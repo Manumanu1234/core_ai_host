@@ -63,13 +63,13 @@ p.intro {
   line-height: 24px;
 }
 a {
-  color: #5b2ddc;
+  color: #5C46B6;
   font-weight: 400;
 }
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #5b2ddc;
+  color: #5C46B6;
 }
 ul,
 ol {
@@ -124,7 +124,7 @@ hr {
   bottom: -1px;
   width: 0;
   height: 2px;
-  background: linear-gradient(to right, #5b2ddc 0%, #41258d 100%);
+  background: linear-gradient(to right, #5C46B6 0%, rgb(48, 22, 120) 100%);
   content: "";
   transition: width 0.2s;
 }
@@ -159,7 +159,7 @@ hr {
   border-color: #000000;
 }
 .navbar-default .navbar-toggle:hover > .icon-bar {
-  background-color: #5b2ddc;
+  background-color: #5C46B6;
 }
 .section-title {
   margin-bottom: 70px;
@@ -173,7 +173,7 @@ hr {
 .section-title h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #5b2ddc 0%, #633add 100%);
+  background: linear-gradient(to right, #5C46B6 0%, #3e2193 100%);
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -187,8 +187,8 @@ hr {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   color: #000000;
-  background-color: #5b2ddc;
-  background-image: linear-gradient(to right, #5b2ddc 0%, #5157d7 100%);
+  background-color: #5C46B6;
+  background-image: linear-gradient(to right, #5C46B6 0%, #492fb1 100%);
   padding: 14px 34px;
   letter-spacing: 1px;
   margin: 0;
@@ -285,7 +285,7 @@ header .intro-text {
   height: 100px;
   padding: 30px 0;
   border-radius: 50%;
-  background: linear-gradient(to right, #5b2ddc 0%, #413f9f 100%);
+  background: linear-gradient(to right, #5C46B6 0%, #422c9a 100%);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
 /* About Section */
@@ -305,7 +305,7 @@ header .intro-text {
 #about h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #4510c3 0%, #6505c5 100%);
+  background: linear-gradient(to right, #5C46B6 0%, #462ea4 100%);
   height: 4px;
   width: 180px;
   bottom: 0;
@@ -320,7 +320,7 @@ header .intro-text {
 #about .about-text li:before {
   content: "\f00c";
   font-family: "FontAwesome";
-  color: #5b2ddc;
+  color: #5C46B6;
   font-size: 11px;
   font-weight: 300;
   padding-right: 8px;
@@ -339,7 +339,7 @@ header .intro-text {
 /* Services Section */
 #services {
   padding: 100px 0;
- background: linear-gradient(to right, #602bbb 0%, #6532dc 100%);
+ background: linear-gradient(to right, #5C46B6 0%, #432f92 100%);
   color: #000000;
 }
 #services .service-desc {
@@ -401,7 +401,7 @@ header .intro-text {
   background: linear-gradient(
     to right,
     rgba(58, 69, 195, 0.8) 0%,
-    #5833ebcc 100%
+    #5C46B6 100%
   );
   padding: 30% 0 0;
   height: 100%;
@@ -491,7 +491,7 @@ header .intro-text {
 /* Contact Section */
 #contact {
   padding: 100px 0 60px;
-  background: linear-gradient(to right, #591fc5 0%, #4e08be 100%);
+  background: linear-gradient(to right, #5C46B6 0%, #3d2794 100%);
   color: rgb(255, 255, 255);
 }
 #contact .section-title {
@@ -611,7 +611,7 @@ label {
   transition: all 0.3s;
 }
 #contact .social i.fa:hover {
-  color: #608dfd;
+  color: #5C46B6;
   background: #fff;
 }
 /* Footer Section*/
@@ -624,10 +624,10 @@ label {
   font-size: 14px;
 }
 #footer a {
-  color: #5221e7;
+  color: #5C46B6;
 }
 #footer a:hover {
-  border-bottom: 2px solid #5b2ddc;
+  border-bottom: 2px solid #5C46B6;
 }
 
 @media (max-width: 768px) {
@@ -656,7 +656,7 @@ label {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  border: 2px solid #5b2ddc;
+  border: 2px solid #5C46B6;
   border-radius: 4px;
   background-color: #333;
   color: #fff;
@@ -668,7 +668,7 @@ label {
 }
 
 .project-form .submit-btn {
-  background-color: #5b2ddc;
+  background-color: #5C46B6;
   color: #fff;
   font-size: 1.5rem;
   border: none;
@@ -679,7 +679,7 @@ label {
 }
 
 .project-form .submit-btn:hover {
-  background-color: #5b2ddc;
+  background-color: #5C46B6;
 }
 
 /* Project Container and Cards */
@@ -709,7 +709,7 @@ label {
 }
 
 .project-card-header {
-  background-image: linear-gradient(to right, #5b2ddc 0%, #35178a 100%);
+  background-image: linear-gradient(to right, #5C46B6 0%, #35178a 100%);
   padding: 15px;
   border-radius: 8px 8px 0 0;
 }
@@ -768,7 +768,7 @@ label {
 .project-title h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #5b2ddc 0%, #41289c 100%);
+  background: linear-gradient(to right, #5C46B6 0%, #41289c 100%);
   height: 4px;
   width: 150px;
   bottom: 0;
@@ -777,7 +777,7 @@ label {
 }
 /* Button to Reveal Full Description */
 .reveal-btn {
-  background-color: #5b2ddc;
+  background-color: #5C46B6;
   color: #fff;
   padding: 8px 12px;
   border: none;
@@ -788,7 +788,7 @@ label {
 }
 
 .reveal-btn:hover {
-  background-color: #5b2ddc;
+  background-color: #5C46B6;
 }
 
 /* Media Queries for Responsiveness */

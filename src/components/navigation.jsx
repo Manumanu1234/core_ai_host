@@ -57,7 +57,7 @@ export const Navigation = (props) => {
             </li>
             <li>
               <a href="#portfolio" onClick={()=>{navigate("/")}} className="page-scroll">
-                Gallary
+                Gallery
               </a>
             </li>
             <li>
