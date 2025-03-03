@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Navigation } from '../components/navigation';
+import { kiran, devananda, festin, leela, fein } from '../assests/projects/index'
 
 const StudentProjects = ({ props = {} }) => {
   const [newProject, setNewProject] = useState({
@@ -33,41 +34,45 @@ const StudentProjects = ({ props = {} }) => {
   const data = props.data || {
     projects: [
       {
-        id: 1,
-        title: 'Project 1',
-        Image:'',
-        description: 'This is a sample project that has a long description. It will be truncated initially, and you can reveal the full description by clicking the button below.',
-        members: ['member 1', 'member 2', 'member 3'],
-        url: 'https://www.example.com',
+        "project_name": "Churn prediction Using SVM",
+        "members": ["Kiran Sreekanth (CSE 2022-26)"],
+        "description": "A Support Vector Machine Model to find and detect the number of churned members.",
+        "link": "https://github.com/kiransreekanth/SVM-model.git",
+        "image": kiran
       },
       {
-        id: 2,
-        title: 'Project 2',
-        image:'',
-        description: 'This is another sample project that also has a long description. It will be truncated initially, and you can reveal the full description by clicking the button below.This is another sample project that also has a long description. It will be truncated initially, and you can reveal the full description by clicking the button below.This is another sample project that also has a long description. It will be truncated initially, and you can reveal the full description by clicking the button below.This is another sample project that also has a long description. It will be truncated initially, and you can reveal the full description by clicking the button below.This is another sample project that also has a long description. It will be truncated initially, and you can reveal the full description by clicking the button below.',
-        members: ['member 1', 'member 2'],
-        url: 'https://www.example2.com',
+        "project_name": "Churn predictor",
+        "members": ["Devananda Nair (CSE 2023-27)"],
+        "description": "Model for predicting customer churn using Telco Customer Churn dataset using classification algorithms models and identify the reason for customers leaving, using Python tools such as pandas, scikit-learn for data manipulation and matplotlib for visualizations.",
+        "link": "https://github.com/devananda6200/churn-predictor",
+        "image": devananda
       },
       {
-        id: 3,
-        title: 'Project 2',
-        image:'',
-        description: 'This is another sample project that also has a long description . It will be truncated initially, and you can reveal the full description by clicking the button below.This is another sample project that also has a long description. It will be truncated initially, and you can reveal the full description by clicking the button below.This is another sample project that also has a long description. It will be truncated initially, and you can reveal the full description by clicking the button below.This is another sample project that also has a long description. It will be truncated initially, and you can reveal the full description by clicking the button below.This is another sample project that also has a long description. It will be truncated initially, and you can reveal the full description by clicking the button below.',
-        members: ['member 1', 'member 2'],
-        url: 'https://www.example2.com',
+        "project_name": "California House Price Prediction",
+        "members": ["Festin Biju (CSE 2023-27)"],
+        "description": "Machine learning project that utilizes regression analysis to predict house prices based on the California housing dataset. The project is implemented in Python and designed for execution in Google Colab, making it accessible for users with varying levels of expertise in data science.",
+        "link": "https://github.com/FestinBiju/AI-ML-house-price-prediction",
+        "image": festin
       },
       {
-        id: 4,
-        title: 'Project 2',
-        image:'',
-        description: 'This is another sample project that also has a long description. It will be truncated initially, and you can reveal the full description by clicking the button below.This is another sample project that also has a long description. It will be truncated initially, and you can reveal the full description by clicking the button below.This is another sample project that also has a long description. It will be truncated initially, and you can reveal the full description by clicking the button below.This is another sample project that also has a long description. It will be truncated initially, and you can reveal the full description by clicking the button below.This is another sample project that also has a long description. It will be truncated initially, and you can reveal the full description by clicking the button below.',
-        members: ['member 1', 'member 2'],
-        url: 'https://www.example2.com',
+        "project_name": "House Price Prediction",
+        "members": ["Leela Bobby (ECE 2023-27)"],
+        "description": "House price prediction project using Linear regression.",
+        "link": "https://github.com/githubleelabobby/House-Price-Prediction-ML-Project",
+        "image": leela
       },
+      {
+        "project_name": "Mandhi Finder",
+        "members": ["Fidhaan Ameer (CSE 2024-28)", "Irene Isaan (CSE 2024-28)", "Elson Biju (CSE 2024-28)"],
+        "description": "It gives info about different types of mandhi.",
+        "link": "https://github.com/Eldhose177/mandhi_finder.git",
+        "image": fein
+      },
+
     ],
   };
 
-  const truncateDescription = (description, limit = 15) => {
+  const truncateDescription = (description, limit = 12) => {
     const words = description.split(' ');
     if (words.length > limit) {
       return words.slice(0, limit).join(' ') + '...';
@@ -85,15 +90,15 @@ const StudentProjects = ({ props = {} }) => {
             data.projects.map((content) => (
               <li key={content.id} className="project-card">
                 <div className="project-card-header">
-                  <img src="https://img.freepik.com/free-photo/document-marketing-strategy-business-concept_53876-132231.jpg" alt="" />
-                  <h3>{content.title}</h3>
+                  <img src={content.image} alt="" />
+                  <h3>{content['project_name']}</h3>
                 </div>
                 <div className="project-card-body">
                   <p className='project-members'>
-                    Members:<ul> 
-                       {content.members.map((name) => (
-                      <li key={name}>{name}</li>
-                    ))}
+                    Members:<ul>
+                      {content.members.map((name) => (
+                        <li key={name}>{name}</li>
+                      ))}
                     </ul>
                   </p>
 
@@ -114,7 +119,7 @@ const StudentProjects = ({ props = {} }) => {
 
                 </div>
                 <div className="project-card-footer">
-                  <a href={content.url} target="_blank" rel="noopener noreferrer">
+                  <a href={content.link} target="_blank" rel="noopener noreferrer">
                     View Project
                   </a>
                 </div>
