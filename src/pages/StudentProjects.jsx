@@ -42,7 +42,7 @@ const StudentProjects = ({ props = {} }) => {
       },
       {
         "project_name": "Churn predictor",
-        "members": ["Devananda Nair (CSE 2023-27)"],
+        "members": ["Deva Nanda Nair (CSE 2023-27)"],
         "description": "Model for predicting customer churn using Telco Customer Churn dataset using classification algorithms models and identify the reason for customers leaving, using Python tools such as pandas, scikit-learn for data manipulation and matplotlib for visualizations.",
         "link": "https://github.com/devananda6200/churn-predictor",
         "image": devananda
