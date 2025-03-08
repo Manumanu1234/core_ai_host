@@ -481,6 +481,12 @@ header .intro-text {
 #team .team-img {
   width: 240px;
 }
+@media (max-width: 528px)  {
+  #team .team-img {
+    width: 280px;
+}
+}
+
 #team .thumbnail {
   background: transparent;
   border: 0;

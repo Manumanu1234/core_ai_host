@@ -1,8 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Carousel } from "@trendyol-js/react-carousel";
 import { ChevronRight } from "lucide-react";
 
 export const Team = (props) => {
+  const [winWidth, setWinWidth] = useState(window.outerWidth);
+
+  // To handle resizing of window
+  useEffect(() => {
+    const handleResize = () => {
+      setWinWidth(window.outerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div id="team" className="text-center">
       <div className="container">
@@ -14,7 +29,7 @@ export const Team = (props) => {
         <div style={{ position: "relative", padding: "20px" }}>
           {props.data ? (
             <Carousel
-              show={4}  // Number of items visible at a time
+              show={winWidth > 500 ? 4 : 1}  
               slide={1}  // Moves only one image per click
               transition={0.5}
               swiping={true}
@@ -23,7 +38,7 @@ export const Team = (props) => {
                   style={{
                     position: "absolute",
                     top: "35%",
-                    right: "-40px",
+                    right: (winWidth > 480) ? `-40px` : `-19px` ,
                     transform: "translateY(-50%)",
                     background: "#fff",
                     color: "#000",
