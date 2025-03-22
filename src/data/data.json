@@ -53,23 +53,23 @@
   "Services": [
     {
       "icon": "fa fa-search",
-      "name": "Generative AI Research",
-      "text": "We explore cutting-edge generative AI models, driving innovation in text, image, and voice synthesis to unlock creative potential."
+      "name": "AI/ML Research",
+      "text": "Exploring cutting-edge advancements in AI and machine learning, focusing on innovative models, algorithms, and applications."
     },
     {
       "icon": "fa fa-laptop",
-      "name": "Machine Learning Development",
-      "text": "Our team builds state-of-the-art machine learning solutions to solve complex real-world problems with precision and efficiency."
+      "name": "Custom AI Solutions",
+      "text": "Developing tailored AI solutions to solve real-world problems, optimizing performance, and enhancing efficiency for businesses and individuals."
     },
     {
       "icon": "fa fa-graduation-cap",
-      "name": "AI Education & Workshops",
-      "text": "Empowering individuals through hands-on workshops, tutorials, and resources to master AI concepts and tools."
+      "name": "AI Education and Workshops",
+      "text": "Conducting interactive workshops and training sessions to empower learners with AI/ML skills, from beginners to advanced practitioners."
     },
     {
-      "icon": "fa fa-code",
-      "name": "Python Development",
-      "text": "We design and develop robust web applications, integrating AI to create smart and responsive user experiences."
+      "icon": "fa fa-users",
+      "name": "Peer-to-Peer Learning",
+      "text": "Encouraging knowledge exchange among AI enthusiasts through discussions, mentorship, and group learning initiatives."
     },
     {
       "icon": "fa fa-globe",
@@ -77,9 +77,9 @@
       "text": "Connecting AI enthusiasts and professionals worldwide to share knowledge, collaborate on projects, and grow together."
     },
     {
-      "icon": "fa fa-cogs",
-      "name": "Custom AI Solutions",
-      "text": "Delivering tailor-made AI solutions to businesses and organizations, ensuring alignment with their unique goals and challenges."
+      "icon": "fa fa-tasks",
+      "name": "Project-Based Learning",
+      "text": "Hands-on approach to AI education, where learners build real-world projects to apply their skills, gain experience, and showcase their expertise."
     }
 ],
  "Testimonials": [
