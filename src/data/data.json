@@ -116,7 +116,7 @@
 ],
   "Team": [
     {
-      "img": "img/team/workshops/pranavchettan.jpg",
+      "img": "img/blackandwhite/Pranav.png",
       "name": "Pranav Krishna Vadhayar",
       "job": "Lead"
     },
@@ -126,12 +126,12 @@
       "job": "Co-Lead"
     },
     {
-      "img": "img/team/devanandha.jpg",
+      "img": "img/blackandwhite/Deva.png",
       "name": "Deva Nanda Nair",
       "job": "Co-Lead"
     },
     {
-      "img": "img/team/irine.jpg",
+      "img": "img/blackandwhite/irine.png",
       "name": "Irine Paul",
       "job": "Creative Lead"
     },
@@ -146,11 +146,11 @@
       "job": "Research Lead"
     },
     {
-      "img": "img/team/seerena.jpg",
+      "img": "img/blackandwhite/Serena.png",
       "name": "Sereena joshy",
       "job": "Out Reach Lead"
     },    {
-      "img": "img/team/leela.jpg",
+      "img": "img/blackandwhite/leela.jpg",
       "name": "Leela Bobby",
       "job": "Out Reach Lead"
     }
