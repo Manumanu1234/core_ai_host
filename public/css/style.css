@@ -394,6 +394,9 @@ header .intro-text {
   position: relative;
   margin: 0;
 }
+.text-center{
+  padding: 0 8px;
+}
 .hover-bg .hover-text {
   position: absolute;
   text-align: center;

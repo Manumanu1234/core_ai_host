@@ -20,6 +20,26 @@
   },
   "Gallery": [
     {
+      "title":"Host Smart with AWS",
+      "largeImage":"img/team/workshops/festin_aws_small.jpg",
+      "smallImage":"img/team/workshops/festin_aws_small.jpg"
+    },
+    {
+      "title":"Flask Gateway",
+      "largeImage":"img/team/workshops/fidhaan_flask.jpg",
+      "smallImage":"img/team/workshops/fidhaan_flask_small.jpg"
+    },
+    {
+      "title":"Computer Vision - 1",
+      "largeImage":"img/team/workshops/devanandha_cv.jpg",
+      "smallImage":"img/team/workshops/devanandha_cv_small.jpg"
+    },
+    {
+      "title": "Introduction to  Classical Machine Learning",
+      "largeImage": "img/team/workshops/pranav_ml.jpg",
+      "smallImage": "img/team/workshops/pranav_ml_small.jpg"
+    },
+    {
       "title": "Intro To Computer Science",
       "largeImage": "img/team/workshops/pranav2.jpg",
       "smallImage": "img/team/workshops/pranav2.jpg"
