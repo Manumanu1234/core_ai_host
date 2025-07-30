@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Navigation } from '../components/navigation';
-import { kiran, devananda, festin, leela, fein } from '../assests/projects/index'
+import { kiran, devananda, festin, leela, fein, aakash, eldhode, gayathri } from '../assests/projects/index'
 
 const StudentProjects = ({ props = {} }) => {
   const [newProject, setNewProject] = useState({
@@ -33,6 +33,27 @@ const StudentProjects = ({ props = {} }) => {
 
   const data = props.data || {
     projects: [
+      {
+        "project_name": "KERALA GOC",
+        "members": ["Eldhose Saju"],
+        "description": "Kerala: God's Own Country is an interactive web application developed using Python and Streamlit.\n\nFeatures:-\n- Interactive Maps – Explore Kerala's major tourist destinations through an interactive map.\n- Responsive UI – Designed for seamless viewing on desktop and mobile devices.\n\nTechnologies Used:-\n- Python (Backend Development)\n- Streamlit (Frontend & UI Framework)\n- Pandas (Data Handling)\n- GeoPandas (Mapping & Geographic Data)\n- OpenStreetMap (Interactive Maps)",
+        "link": "https://github.com/Eldhose-saju/KERALA_GOC",
+        "image": eldhode
+      },
+      {
+        "project_name": "Lifestyle Hub",
+        "members": ["Gayathri J S"],
+        "description": "A comprehensive personal lifestyle management web application built with Streamlit.\n\nOverview:\nLifestyle Hub helps you organize your daily activities, track habits, manage finances, and maintain a positive mindset.\n\nFeatures:\n- Home Dashboard with greetings, affirmations, and daily overview\n- Calendar to track events and appointments\n- Daily Affirmations – Predefined or custom\n- Daily Planner for tasks and long-term goals\n- Habit Tracker with visual progress\n- Finance Tracker to monitor expenses and visualize spending patterns",
+        "link": "https://github.com/Gayathriijs/Streamlit",
+        "image": gayathri
+      },
+      {
+        "project_name": "Real-time Stock Market Monitoring",
+        "members": ["Aakash Rajeev"],
+        "description": "📈 Real-Time Stock Market Monitoring\nStreamlit-based real-time stock market monitoring app powered by Alpha Vantage API.\n\n✅ What is expected:\n✔️ Gemini AI Integration – Forecast stock trends & provide investment recommendations.\n✔️ Fetches real-time stock data for user-defined stock symbols.\n✔️ Interactive stock market trend visualization using Plotly.\n✔️ Optimized performance with cached API requests.\n\nPlanned Future Features:\n🔹 Integration of NSE API – Support for Indian stocks.\n🔹 Dark/Light Mode Toggle – Improve UI experience.\n🔹 Auto-Refresh Option – Refresh stock data at regular intervals.\n🔹 Sidebar with Extra Features – Display company profiles, market capital, and more.\n\n⚠️ What to look out for:\n❌ NSE stock symbols not supported currently.\n❌ API Rate Limits – Free tier allows 5 API calls per minute.\n❌ Timeout Handling – Not implemented.\n❌ Slow Data Retrieval – For uncached symbols.\n\n🛠️ Installation & Setup\n1️⃣ Clone the Repository:\n   git clone https://github.com/aakshpy/Real-time-Stock-Market-Monitoring.git\n2️⃣ Install Dependencies:\n   pip install -r requirements.txt\n3️⃣ Run the App:\n   streamlit run RTSMM.py",
+        "link": "https://github.com/aakshpy/Real-time-Stock-Market-Monitoring",
+        "image": aakash
+      },
       {
         "project_name": "Churn prediction Using SVM",
         "members": ["Kiran Sreekanth (CSE 2022-26)"],
