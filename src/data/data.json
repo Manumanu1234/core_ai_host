@@ -39,6 +39,17 @@
       "largeImage": "img/team/workshops/pranav_ml.jpg",
       "smallImage": "img/team/workshops/pranav_ml_small.jpg"
     },
+
+    {
+      "title":"Online Computer Vision Workshop",
+      "largeImage":"img/team/workshops/devanandha_cv_w.jpg",
+      "smallImage":"img/team/workshops/devanandha_cv_w_small.jpg"
+    },
+    {
+      "title":"Offline Flask Workshop",
+      "largeImage":"img/team/workshops/fidhan_f1.jpg",
+      "smallImage":"img/team/workshops/fidhan_f1.jpg"
+    },
     {
       "title": "Intro To Computer Science",
       "largeImage": "img/team/workshops/pranav2.jpg",
