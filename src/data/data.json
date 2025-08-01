@@ -39,6 +39,17 @@
       "largeImage": "img/team/workshops/pranav_ml.jpg",
       "smallImage": "img/team/workshops/pranav_ml_small.jpg"
     },
+
+    {
+      "title":"Online Computer Vision Workshop",
+      "largeImage":"img/team/workshops/devanandha_cv_w.jpg",
+      "smallImage":"img/team/workshops/devanandha_cv_w_small.jpg"
+    },
+    {
+      "title":"Offline Flask Workshop",
+      "largeImage":"img/team/workshops/fidhan_f1.jpg",
+      "smallImage":"img/team/workshops/fidhan_f1.jpg"
+    },
     {
       "title": "Intro To Computer Science",
       "largeImage": "img/team/workshops/pranav2.jpg",
@@ -138,17 +149,17 @@
     {
       "img": "img/blackandwhite/Pranav.png",
       "name": "Pranav Krishna Vadhayar",
-      "job": "Lead"
+      "job": "Founder"
     },
     {
       "img": "img/team/festin.jpg",
       "name": "Festin Biju",
-      "job": "Co-Lead"
+      "job": "Lead"
     },
     {
       "img": "img/blackandwhite/Deva.png",
       "name": "Deva Nanda Nair",
-      "job": "Co-Lead"
+      "job": "Tech-Lead"
     },
     {
       "img": "img/blackandwhite/Irine.png",

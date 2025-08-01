@@ -33,7 +33,7 @@ const StudentProjects = ({ props = {} }) => {
         project_name: "KERALA GOC",
         members: ["Eldhose Saju"],
         description:
-          "Kerala: God's Own Country is an interactive web application developed using Python and Streamlit.\n\nFeatures:-\n- Interactive Maps – Explore Kerala's major tourist destinations through an interactive map.\n- Responsive UI – Designed for seamless viewing on desktop and mobile devices.\n\nTechnologies Used:-\n- Python (Backend Development)\n- Streamlit (Frontend & UI Framework)\n- Pandas (Data Handling)\n- GeoPandas (Mapping & Geographic Data)\n- OpenStreetMap (Interactive Maps)",
+          "Kerala: God's Own Country is an interactive web application developed using Python and Streamlit. It features interactive maps to explore major tourist destinations in Kerala and a responsive UI for both desktop and mobile devices. Technologies used include Python for backend development, Streamlit as the frontend framework, Pandas for data handling, GeoPandas for geographic mapping, and OpenStreetMap for interactive maps.",
         link: "https://github.com/Eldhose-saju/KERALA_GOC",
         image: eldhode,
       },
@@ -41,7 +41,7 @@ const StudentProjects = ({ props = {} }) => {
         project_name: "Lifestyle Hub",
         members: ["Gayathri J S"],
         description:
-          "A comprehensive personal lifestyle management web application built with Streamlit.\n\nOverview:\nLifestyle Hub helps you organize your daily activities, track habits, manage finances, and maintain a positive mindset.\n\nFeatures:\n- Home Dashboard with greetings, affirmations, and daily overview\n- Calendar to track events and appointments\n- Daily Affirmations – Predefined or custom\n- Daily Planner for tasks and long-term goals\n- Habit Tracker with visual progress\n- Finance Tracker to monitor expenses and visualize spending patterns",
+          "A comprehensive personal lifestyle management web application built with Streamlit. Lifestyle Hub helps you organize your daily activities, track habits, manage finances, and maintain a positive mindset. Features include a home dashboard with greetings, affirmations, and daily overview; calendar to track events and appointments; daily affirmations (predefined or custom); daily planner for tasks and long-term goals; habit tracker with visual progress; and a finance tracker to monitor expenses and visualize spending patterns.",
         link: "https://github.com/Gayathriijs/Streamlit",
         image: gayathri,
       },
@@ -49,7 +49,7 @@ const StudentProjects = ({ props = {} }) => {
         project_name: "Real-time Stock Market Monitoring",
         members: ["Aakash Rajeev"],
         description:
-          "📈 Real-Time Stock Market Monitoring using Streamlit, Alpha Vantage API, Gemini AI Integration, and Plotly visualizations.",
+          "Real-Time Stock Market Monitoring using Streamlit, Alpha Vantage API, Gemini AI Integration, and Plotly visualizations.",
         link: "https://github.com/aakshpy/Real-time-Stock-Market-Monitoring",
         image: aakash,
       },
@@ -121,9 +121,8 @@ const StudentProjects = ({ props = {} }) => {
                   </p>
 
                   <div
-                    className={`project-description ${
-                      revealedDescription === index ? 'expanded' : 'collapsed'
-                    }`}
+                    className={`project-description ${revealedDescription === index ? 'expanded' : 'collapsed'
+                      }`}
                   >
                     {revealedDescription === index
                       ? project.description
