@@ -862,3 +862,35 @@ label {
     font-size: 1.5rem;
   }
 }
+
+.project-description {
+  max-height: 100px;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  opacity: 0.7;
+}
+
+.project-description.expanded {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.project-description.collapsed {
+  max-height: 80px;
+  opacity: 0.7;
+}
+
+.reveal-btn {
+  margin-top: 10px;
+  background: #4e54c8;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.reveal-btn:hover {
+  background: #3b3fc0;
+}
