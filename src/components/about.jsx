@@ -1,11 +1,19 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { Container, Row, Col, Image } from "react-bootstrap"; // Import React-Bootstrap components
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export const About = (props) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
   return (
     <div id="about">
       <Container>
-        <Row>
+        <Row  data-aos="fade-up">
           <Col xs={12} md={6}>
             <Image
               src="img/coreai.png"
@@ -25,8 +33,8 @@ export const About = (props) => {
                     <ul>
                       {props.data
                         ? props.data.Why.map((d, i) => (
-                            <li key={`${d}-${i}`}>{d}</li>
-                          ))
+                          <li key={`${d}-${i}`}>{d}</li>
+                        ))
                         : "loading"}
                     </ul>
                   </Col>
@@ -34,8 +42,8 @@ export const About = (props) => {
                     <ul>
                       {props.data
                         ? props.data.Why2.map((d, i) => (
-                            <li key={`${d}-${i}`}>{d}</li>
-                          ))
+                          <li key={`${d}-${i}`}>{d}</li>
+                        ))
                         : "loading"}
                     </ul>
                   </Col>

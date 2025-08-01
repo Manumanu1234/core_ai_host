@@ -1,7 +1,8 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
-import React from "react";
-import { Form, Button, Row, Col, Container } from 'react-bootstrap';
+import { Form, Button, Row, Col, Container } from "react-bootstrap";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const initialState = {
   name: "",
@@ -11,6 +12,10 @@ const initialState = {
 
 export const Contact = (props) => {
   const [{ name, email, message }, setState] = useState(initialState);
+
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -24,7 +29,12 @@ export const Contact = (props) => {
     console.log(name, email, message);
 
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
+      .sendForm(
+        "YOUR_SERVICE_ID",     // Replace with your EmailJS service ID
+        "YOUR_TEMPLATE_ID",    // Replace with your EmailJS template ID
+        e.target,
+        "YOUR_PUBLIC_KEY"      // Replace with your EmailJS public key
+      )
       .then(
         (result) => {
           console.log(result.text);
@@ -41,7 +51,7 @@ export const Contact = (props) => {
       <div id="contact">
         <Container>
           <Row>
-            <Col md={8}>
+            <Col md={8} data-aos="fade-up">
               <div className="section-title">
                 <h2>Get In Touch</h2>
                 <p>
@@ -49,7 +59,7 @@ export const Contact = (props) => {
                   get back to you as soon as possible.
                 </p>
               </div>
-              <Form name="sentMessage" validated onSubmit={handleSubmit}>
+              <Form onSubmit={handleSubmit}>
                 <Row>
                   <Col md={6}>
                     <Form.Group controlId="formName">
@@ -62,7 +72,7 @@ export const Contact = (props) => {
                       />
                     </Form.Group>
                   </Col>
-                  
+
                   <Col md={6}>
                     <Form.Group controlId="formEmail">
                       <Form.Control
@@ -86,12 +96,14 @@ export const Contact = (props) => {
                     onChange={handleChange}
                   />
                 </Form.Group>
+                <br />
                 <Button type="submit" variant="primary" className="btn-custom btn-lg">
                   Send Message
                 </Button>
               </Form>
             </Col>
-            <Col md={3} mdOffset={1} className="contact-info">
+
+            <Col md={3} className="offset-md-1 contact-info" data-aos="fade-up" data-aos-delay="100">
               <div className="contact-item">
                 <h3>Contact Info</h3>
                 <p>
@@ -119,22 +131,23 @@ export const Contact = (props) => {
               </div>
             </Col>
           </Row>
-          <Row>
+
+          <Row data-aos="fade-up" data-aos-delay="200">
             <Col md={12}>
               <div className="social">
                 <ul>
                   <li>
-                    <a href="https://www.instagram.com/core.ai_toch/?igsh=MTlwb2d2MnNyNzV1cA%3D%3D#">
+                    <a href="https://www.instagram.com/core.ai_toch/" target="_blank" rel="noreferrer">
                       <i className="fa fa-instagram"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.linkedin.com/company/core-ai-toch/">
+                    <a href="https://www.linkedin.com/company/core-ai-toch/" target="_blank" rel="noreferrer">
                       <i className="fa fa-linkedin"></i>
                     </a>
                   </li>
                   <li>
-                    <a href={props.data ? props.data.youtube : "/"}>
+                    <a href={props.data ? props.data.youtube : "/"} target="_blank" rel="noreferrer">
                       <i className="fa fa-twitter"></i>
                     </a>
                   </li>
@@ -144,13 +157,12 @@ export const Contact = (props) => {
           </Row>
         </Container>
       </div>
+
       <div id="footer">
         <Container className="text-center">
           <p>
-            &copy; Core Ai Toc H Institute of Science and Technology. Design by{" "}
-            <a href="#" rel="nofollow">
-              Core Ai Team
-            </a>
+            &copy; Core AI Toc H Institute of Science and Technology. Design by{" "}
+            <a href="#">Core AI Team</a>
           </p>
         </Container>
       </div>

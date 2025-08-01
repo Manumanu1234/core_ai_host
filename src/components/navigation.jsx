@@ -42,7 +42,7 @@ export const Navigation = (props) => {
             </li>
             <li>
               <a href="#services" onClick={()=>{navigate("/")}} className="page-scroll">
-                Vison And Mission
+                Vision And Mission
               </a>
 
             </li>
