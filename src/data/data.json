@@ -20,6 +20,36 @@
   },
   "Gallery": [
     {
+      "title":"AI 101 Talk to the Future",
+      "largeImage":"img/team/workshops/Ai 101.jpeg",
+      "smallImage":"img/team/workshops/Ai 101.jpeg"
+    },
+    {
+      "title":"AI Builder Bootcamp",
+      "largeImage":"img/team/workshops/ai_bootcamp.jpeg",
+      "smallImage":"img/team/workshops/ai_bootcamp.jpeg"
+    },
+    {
+      "title":"First Step First",
+      "largeImage":"img/team/workshops/first_step_first.jpeg",
+      "smallImage":"img/team/workshops/first_step_first.jpeg"
+    },
+    {
+      "title":"Unlock Future Gen AI",
+      "largeImage":"img/team/workshops/unlock future genai.jpeg",
+      "smallImage":"img/team/workshops/unlock future genai.jpeg"
+    },
+    {
+      "title":"DL 101 From Zero to Neural",
+      "largeImage":"img/team/workshops/DL_101.jpeg",
+      "smallImage":"img/team/workshops/DL_101.jpeg"
+    },
+    {
+      "title":"O Pen Mic",
+      "largeImage":"img/team/workshops/open_mic.jpeg",
+      "smallImage":"img/team/workshops/open_mic.jpeg"
+    },
+    {
       "title":"Host Smart with AWS",
       "largeImage":"img/team/workshops/festin_aws.jpg",
       "smallImage":"img/team/workshops/festin_aws_small.jpg"

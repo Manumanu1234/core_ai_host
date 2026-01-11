@@ -388,11 +388,18 @@ header .intro-text {
 .portfolio-item {
   margin: 1px -15px 0 -14px;
   padding: 0;
+  height: 250px;
 }
 .portfolio-item .hover-bg {
   overflow: hidden;
   position: relative;
   margin: 0;
+  height: 100%;
+}
+.portfolio-item img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 .text-center{
   padding: 0 8px;
