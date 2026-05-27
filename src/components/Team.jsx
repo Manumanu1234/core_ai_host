@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Carousel } from "@trendyol-js/react-carousel";
-import { ChevronRight } from "lucide-react";
+import ChevronRight from "lucide-react/dist/esm/icons/chevron-right.mjs";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
