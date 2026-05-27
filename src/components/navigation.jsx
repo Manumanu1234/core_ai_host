@@ -1,8 +1,7 @@
 import React from "react";
-import { Navigate, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-export const Navigation = (props) => {
-  const navigate=useNavigate()
+export const Navigation = () => {
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
@@ -20,9 +19,9 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
           </button>
 
-          <a className="navbar-brand page-scroll" href="#page-top">
+          <Link className="navbar-brand page-scroll" to="/#page-top">
             Core AI
-          </a>{" "}
+          </Link>{" "}
         </div>
 
         <div
@@ -31,44 +30,40 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="#" onClick={()=>{navigate("/")}} className="page-scroll">
+              <Link to="/#page-top" className="page-scroll">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#About" onClick={()=>{navigate("/")}} className="page-scroll">
+              <Link to="/#About" className="page-scroll">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#services" onClick={()=>{navigate("/")}} className="page-scroll">
+              <Link to="/#services" className="page-scroll">
                 Vision And Mission
-              </a>
+              </Link>
 
             </li>
             <li>
-              <a
-                href="#"
-                onClick={()=>{navigate("/studentproject")}}
-                className="page-scroll"
-              >
+              <Link to="/studentproject" className="page-scroll">
                 Student Projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#portfolio" onClick={()=>{navigate("/")}} className="page-scroll">
+              <Link to="/#portfolio" className="page-scroll">
                 Gallery
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#team" onClick={()=>{navigate("/")}} className="page-scroll">
+              <Link to="/#team" className="page-scroll">
                 Team
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#contact" onClick={()=>{navigate("/")}} className="page-scroll">
+              <Link to="/#contact" className="page-scroll">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

@@ -162,7 +162,7 @@ export const Contact = (props) => {
         <Container className="text-center">
           <p>
             &copy; Core AI Toc H Institute of Science and Technology. Design by{" "}
-            <a href="#">Core AI Team</a>
+            <a href="/">Core AI Team</a>
           </p>
         </Container>
       </div>
