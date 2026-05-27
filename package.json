@@ -4,7 +4,7 @@
   "dependencies": {
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
-    "@testing-library/user-event": "^7.1.2",
+    "@testing-library/user-event": "^14.6.1",
     "@trendyol-js/react-carousel": "^3.0.3",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
